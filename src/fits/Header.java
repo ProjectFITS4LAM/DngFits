@@ -1,3 +1,13 @@
+/*
+ * Header.java
+ * version 1.0
+ * 14 July 2022
+ * Copyright 2022 Giuliano Giuffrida
+ * GNU General Public License v3.0
+ *
+ *
+ */
+
 package fits;
 
 import java.io.UnsupportedEncodingException;
@@ -7,9 +17,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 /**
- * Oggetto di tipo Header, contiene l'Header come byte[] e il numero di riga contenente la chiave "END"
- * @author g.giuffrida
- *
+ * Header Object, constructor requires the header as byte[] and the line number containing the key "END"
+ * @author Giuliano Giuffrida
+ * @version 1.0
  */
 public class Header {
 
@@ -30,7 +40,7 @@ public class Header {
 	}
 	/**
 	 * 
-	 * @return
+	 * @return LinkedHashMap<String,String> containing the key/values of the header in the right order.
 	 * @throws UnsupportedEncodingException
 	 */
 	public LinkedHashMap<String,String> getMap() throws UnsupportedEncodingException {
@@ -104,8 +114,12 @@ public class Header {
 		}
 		return headerMap;
 	}
-	
-	public static byte[] getValueWithoutComment(byte[] value) {
+	/**
+	 * Remove the comment from value.
+	 * @param value
+	 * @return
+	 */
+	private static byte[] getValueWithoutComment(byte[] value) {
 
 		//check comment
 		boolean comment=false;

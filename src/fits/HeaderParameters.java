@@ -1,7 +1,22 @@
+/*
+ * HeaderParameters.java
+ * version 1.0
+ * 14 July 2022
+ * Copyright 2022 Giuliano Giuffrida
+ * GNU General Public License v3.0
+ *
+ *
+ */
+
 package fits;
 
 import java.util.LinkedHashMap;
 
+/**
+ * Dummy header parameters 
+ * @author Giuliano Giuffrida
+ * @version 1.0
+ */
 public class HeaderParameters {
 	LinkedHashMap<String,HeaderValue> headerParams;
 	public HeaderParameters() {
@@ -27,9 +42,6 @@ public class HeaderParameters {
 		headerParams.put("CUNIT2", new HeaderValue("mm", "Measurement Unit for axis 2")); //TODO: temp
 		headerParams.put("CDELT1", new HeaderValue("0.0635", "Coordinate increment along axis 1")); //TODO: temp
 		headerParams.put("CDELT2", new HeaderValue("0.0635", "Coordinate increment along axis 2")); //TODO: temp
-		headerParams.put("HOSTPC", new HeaderValue("C_SCANNER", "Host PC")); //TODO: temp
-	  	//header.put("SCANNER", new HeaderValue("Canonn ESO D5 - 01", "Scanner ID")); //TODO: temp
-		headerParams.put("OPERATOR", new HeaderValue("One man", "Operator")); //TODO: temp
 		
 	}
 
