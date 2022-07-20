@@ -1,3 +1,13 @@
+/*
+ * WriteFits.java
+ * version 1.0
+ * 14 July 2022
+ * Copyright 2022 Giuliano Giuffrida
+ * GNU General Public License v3.0
+ *
+ *
+ */
+
 package fileio;
 
 import java.io.File;
@@ -24,7 +34,11 @@ import tiff.TiffEntry;
 import tiff.TiffDirectory;
 import tiff.TiffHandle;
 import tiff.TiffTag;
-
+/**
+ * File FITS writer starting from DNG
+ * @author Giuliano Giuffrida
+ * @version 1.0
+ */
 public class WriteFits {
 	
 	static LinkedHashMap<String,HeaderValue> header;
@@ -47,6 +61,7 @@ public class WriteFits {
 				header.put("NAXIS", new HeaderValue(2, "Number of data axes"));
 				header.put("NAXIS1", new HeaderValue(pixels, "Length of data axis 1"));
 				header.put("NAXIS2", new HeaderValue(scanlines, "Length of data axis 2"));		
+				header.put("UNIKEY", new HeaderValue("T", "Compliant with UNI 11845:2022"));		
 				
         ArrayList<TiffDirectory> tiffDirectoryList = inputHandle.getDirectoryList();
         TiffDirectory ifd0 = tiffDirectoryList.get(0);

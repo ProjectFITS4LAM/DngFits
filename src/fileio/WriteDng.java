@@ -1,3 +1,13 @@
+/*
+ * WriteDng.java
+ * version 1.0
+ * 14 July 2022
+ * Copyright 2022 Giuliano Giuffrida
+ * GNU General Public License v3.0
+ *
+ *
+ */
+
 package fileio;
 
 import java.io.File;
@@ -15,7 +25,11 @@ import tiff.TiffDirectory;
 import tiff.TiffHandle;
 import tiff.TiffWrite;
 import tiff.TiffTag;
-
+/**
+ * File Adobe DNG writer starting from FITS created by WriteFits class
+ * @author Giuliano Giuffrida
+ * @version 1.0
+ */
 public class WriteDng {
 
 	
