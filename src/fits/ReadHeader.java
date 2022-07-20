@@ -1,3 +1,13 @@
+/*
+ * ReadHeader.java
+ * version 1.0
+ * 14 July 2022
+ * Copyright 2022 Giuliano Giuffrida
+ * GNU General Public License v3.0
+ *
+ *
+ */
+
 package fits;
 
 import java.io.IOException;
@@ -6,7 +16,8 @@ import java.util.ArrayList;
 
 /**
  * Class used to read the Header of a FITS file
- * @author g.giuffrida
+ * @author Giuliano Giuffrida
+ * @version 1.0
  *
  */
 public class ReadHeader {
