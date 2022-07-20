@@ -1,3 +1,13 @@
+/*
+ * ReadData.java
+ * version 1.0
+ * 14 July 2022
+ * Copyright 2022 Giuliano Giuffrida
+ * GNU General Public License v3.0
+ *
+ *
+ */
+
 package fits;
 
 import java.io.IOException;
@@ -12,7 +22,8 @@ import java.util.Map;
 /**
  * Read the image data array
  * 
- * @author g.giuffrida
+ * @author Giuliano Giuffrida
+ * @version 1.0
  *
  */
 public class ReadData {
@@ -103,8 +114,8 @@ public class ReadData {
 	 * check if a byte[] contain a int and return it, otherwise return -9999
 	 * 
 	 * @param value
-	 *            Il valore da leggere come array di byte
-	 * @return Il valore come numero
+	 *           
+	 * @return 
 	 */
 	public static int returnNumberIfValid(byte[] value) {
 		int number = -9999;

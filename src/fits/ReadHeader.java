@@ -5,16 +5,16 @@ import java.io.RandomAccessFile;
 import java.util.ArrayList;
 
 /**
- * Classe dedicata alla lettura dei blocchi di Header
+ * Class used to read the Header of a FITS file
  * @author g.giuffrida
  *
  */
 public class ReadHeader {
 
 	/**
-	 * Legge blocchi da 2880 byte finch� non incontra la chiave END
-	 * @param file Oggetto di tipo RandomAccessFile
-	 * @return Oggetto di tipo Header
+	 * Read blocks of 2880 bytes until END key is detected
+	 * @param file RandomAccessFile
+	 * @return Header object
 	 * @throws IOException
 	 */
 	public static Header read(RandomAccessFile file) throws IOException {

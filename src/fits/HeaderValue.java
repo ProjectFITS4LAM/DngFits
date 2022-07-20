@@ -1,5 +1,19 @@
-package fits;
+/*
+ * HeaderValue.java
+ * version 1.0
+ * 14 July 2022
+ * Copyright 2022 Giuliano Giuffrida
+ * GNU General Public License v3.0
+ *
+ *
+ */
 
+package fits;
+/**
+ * Object HeaderValue, useful to store value, comment and determine value datatype
+ * @author Giuliano Giuffrida
+ * @version 1.0
+ */
 public class HeaderValue {
 	Object value;
 	String comment;
@@ -15,8 +29,8 @@ public class HeaderValue {
 		return comment;
 	}	
 	/**
-	 * STRING, BOOLEAN, INTEGER, DOUBLE
-	 * @return 
+	 * 
+	 * @return STRING, BOOLEAN, INTEGER or DOUBLE
 	 */
 	public String getValueType () {
 		String val=value.toString();

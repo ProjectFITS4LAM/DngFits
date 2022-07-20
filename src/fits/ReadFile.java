@@ -1,3 +1,13 @@
+/*
+ * ReadFile.java
+ * version 1.0
+ * 14 July 2022
+ * Copyright 2022 Giuliano Giuffrida
+ * GNU General Public License v3.0
+ *
+ *
+ */
+
 package fits;
 
 import java.io.File;
@@ -5,8 +15,9 @@ import java.io.FileNotFoundException;
 import java.io.RandomAccessFile;
 
 /**
- * Accede al file fits e ritorna un oggetto di tipo RandomAccessFile
- * @author g.giuffrida
+ * From File to RandomAccessFile
+ * @author Giuliano Giuffrida
+ * @version 1.0
  *
  */
 public class ReadFile {
