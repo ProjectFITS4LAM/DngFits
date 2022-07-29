@@ -2,7 +2,7 @@
  * WriteDng.java
  * version 1.0
  * 14 July 2022
- * Copyright 2022 Giuliano Giuffrida
+ * Copyright 2022 Giuliano Giuffrida, Biblioteca Apostolica Vaticana
  * GNU General Public License v3.0
  *
  *
