@@ -19,4 +19,4 @@ JPEG Preview: None\
 Don't embed fast load data\
 Don't use lossy compression\
 Preserve Pixel Count\
-Don't embed original\
+Don't embed original
