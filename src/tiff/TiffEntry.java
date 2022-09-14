@@ -17,6 +17,7 @@ import java.util.ArrayList;
 /**
  * 
  * @author Keith T. Knox
+ * @author Giuliano Giuffrida
  * @version 1.0
  *
  */

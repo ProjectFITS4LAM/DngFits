@@ -14,6 +14,7 @@ package tiff;
 /**
  * 
  * @author Keith T. Knox
+ * @author Giuliano Giuffrida
  * @version 1.0
  *
  */
